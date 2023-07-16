@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Background-Changer</title>
+
+    <style>
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        #white{
+            background-color: lightslategray;
+        }
+        #black{
+            background-color: black;
+        }
+        #red{
+            background-color: darkred;
+    
+        }
+    </style>
+</head>
+<body>
+    <span class="btn" id="white" onclick="changebg('lightslategray')"></span>
+    <span class="btn" id="black" onclick="changebg('black')"></span>
+    <span class="btn" id="red" onclick="changebg('darkred')"></span>
+
+
+    <div id="container">
+        <h1>Demon <span>Slayer</span></h1>
+        <div id="demon-img-div">
+            <img src="./tanjiro-kamado-cute-anime-3840x2160-12045.jpg" alt="" id="demon-img">
+           <video  id="v1" src="./demon.mp4" loop muted
+           ></video>
+        </div>
+
+        
+        
+        <p id="con1-p">
+            <mark><b>Demon Slayer</b></mark> follows the story of a young boy named <i>Kamado Tanjiro</i>, who lives in the mountains with his parents and five siblings. One day, the boy went to sell charcoal in the village. When he returned, his house was destroyed and everyone was killed by a Demon. The only surviving member of the family was Kamado Nezuko, his younger sister, who turned into a Demon herself.Tanjiro fights relentlessly to find a cure for his sister. He becomes a Demon Slayer and fights alongside Inosuke Hashibira and Zenitsu Agatsuma. Throughout the Demon Slayermanga and anime, a few of Tanjiro's quotes sum up his character better than any others.In chapter <strong>107</strong> of the Manga, Muichiro Tokito runs through the forest back to the village. Suddenly, he comes across Kotetsu trying to fight a minion fish Demon. The Mist Hashira knows the young villager would die.<br>
+            <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba" id="atag-demon" target="_blank">
+            <abbr title="About Demon Slayer">More-Details &#8594</abbr>
+            </a>
+        </p>
+    </div>
+
+
+    <!-- Second - Page  -->
+
+    <div id="container2">
+        <h1>Dragon Ball <span id="con2-span">Z</span></h1>
+        <div id="goku-img-div">
+            <img src="./wallpapersden.com_kid-goku-funny-ai-art_1920x1080.jpg" alt="" id="goku-img">
+
+            <video  id="v2" src="./Son Goku clean  transition 1080p48 •edit• { NF - The Search }.mp4" loop muted
+            ></video>
+            
+            
+        </div>
+       
+        <p id="con2-p">
+            When the original <mark><b> Dragon Ball</b></mark> series begins, Goku has a nomad-like lifestyle where he lives in isolation. Goku explains that he was raised by a kindly old man named Gohan, who took him in as his own. Unfortunately, circumstances intervene, and Goku’s unusual background leads to Grandpa Gohan’s passing. Goku is a strong fighter, but he’s still just a child with extremely minimal real-world experience, so it’s surprising to see that he’s been able to survive on his own before he meets Bulma..Dragon Ball’s adventure truly begins once Goku heads off with Bulma to locate the remaining Dragon Balls. The whole reason that she runs into him is that her Dragon Radar detects Goku’s Four-Star Ball. This Dragon Ball is Goku’s lasting memory behind his Grandpa Gohan, but considering the importance of these orbs, it’s quite strange that Bulma is the first to come to his door looking for it. This contrivance is necessary for the anime’s story to begin, but Bulma is far from the only one aware of the Dragon Balls and their powers.
+
+            <a href="https://en.wikipedia.org/wiki/Dragon_Ball_Z" id="atag-goku" target="_blank"><abbr title="More About Dragon ball">More Details &#8594</abbr></a>
+        </p>
+        
+    </div>
+
+    <!-- Third - Page  -->
+
+    <div id="container3">
+        <h1>One <span id="luffy">Pice</span> </h1>
+        <div id="luffy-img-div">
+            <img src="./wallpapersden.com_luffy-ai-art_1920x1080.jpg" id="luffy-img">
+
+            <video  id="v3" src="./One Piece - Doublë  [Edit_Amv].mp4"   loop  muted
+           
+           ></video>
+        </div>
+       
+        <p id="con3-p">
+            <mark><b>Monkey D. Luffy</b></mark> , also known as "Straw Hat Luffy" and commonly as "Straw Hat",[10] is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates, as well as the most powerful of its top fighters.[26][27] He desires to find the legendary treasure left behind by the late Gol D. Roger and thereby become the Pirate King,[28] which would help facilitate an unknown dream of his that he has told only to Shanks, his brothers, and crew.[29][30] He believes that being the Pirate King means having the most freedom in the world.Luffy has made tremendous strides in his life of piracy, with his bounty heavily reflecting this fact. He gained his first bounty of Beli30,000,000 for defeating the strongest pirate captains of the East Blue, which then increased to Beli100,000,000 after defeating Crocodile in Arabasta. After his crew's invasion into and escape from Enies Lobby, his bounty was increased to Beli300,000,000. His sizeable bounty upon arriving at the Sabaody Archipelago caused Luffy.<br>
+            <a href="https://onepiece.fandom.com/wiki/One_Piece_Wiki"   id="atag-onepice" target="_blank"><abbr title="More About One Pice">More Details &#8594</abbr></a>
+            
+        </p>
+    </div>
+
+    
+
+    
+    
+<script>
+   let vd = document.getElementById("v1");
+   let vd2 = document.getElementById("v2");
+   let vd3 = document.getElementById("v3");
+
+   
+
+   
+   vd.addEventListener("mouseover", function(){
+    
+        vd.muted=false
+        vd.play();
+        vd.load();
+        vd.autoplay = true;
+        vd.loop = true;
+        vd.preload = "auto";
+   })
+   vd.addEventListener("mouseout", function(){
+        vd.muted=true
+        vd.pause();
+        vd.load();
+        vd.preload = "auto";
+   })
+
+   
+   
+   vd2.addEventListener("mouseover", function(){
+    
+        vd2.muted = false
+        vd2.play();
+   })
+   vd2.addEventListener("mouseout", function(){
+        vd2.muted = true
+        vd2.pause();
+   })
+
+
+   
+   vd3.addEventListener("mouseover", function(){
+    
+        vd3.muted = false
+        vd3.play();
+   })
+   vd3.addEventListener("mouseout", function(){
+        vd3.muted = true
+        vd3.pause();
+   })
+
+
+    let demonimgdiv = document.getElementById("demon-img-div");
+    let gokuimgdiv = document.getElementById("goku-img-div");
+    let luffyimgdiv = document.getElementById("luffy-img-div");
+
+    let demonimage = document.getElementById("demon-img");
+    let gokuimage = document.getElementById("goku-img");
+    let luffyimage = document.getElementById("luffy-img");
+    let p = document.getElementById("con1-p")
+
+
+    window.addEventListener("DOMContentLoaded", function(){
+       
+
+    })
+    // DEMON - SLAYER-------------------
+    demonimgdiv.addEventListener("mouseover", function(){
+        
+        
+        demonimage.style.scale = "1.1"  
+        demonimage.style.filter = "saturate(2)"
+        demonimage.style.transition = "all ease 0.4s"
+    })
+    demonimgdiv.addEventListener("mouseout", function(){
+        
+        demonimage.style.scale = "1"
+        demonimage.style.filter = "saturate(1)"
+        demonimage.style.transition = "all ease 0.4s"
+    })
+
+    // DRAGON - BALL-------------------
+    gokuimgdiv.addEventListener("mouseover", function(){
+
+        gokuimage.style.scale = "1.1"
+        gokuimage.style.filter = "saturate(3)"
+        gokuimage.style.transition = "all ease 0.4s"
+    })
+    gokuimgdiv.addEventListener("mouseout", function(){
+        gokuimage.style.scale = "1"
+        gokuimage.style.filter = "saturate(1)"
+        gokuimage.style.transition = "all ease 0.4s"
+    })
+
+    // ONE - PICE-------------------
+    luffyimgdiv.addEventListener("mouseover", function(){
+        luffyimage.style.scale = "1.1"
+        luffyimage.style.filter = "saturate(3)"
+        luffyimage.style.transition = "all ease 0.4s"
+    })
+    luffyimgdiv.addEventListener("mouseout", function(){
+        luffyimage.style.scale = "1"
+        luffyimage.style.filter = "saturate(1)"
+        luffyimage.style.transition = "all ease 0.4s"
+    })
+
+
+
+    //A-tag Demon Slayer==============================
+
+    let atag = document.getElementById("atag-demon");
+    let dslink = "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba";
+    let features = "width=500, height=500";
+
+    atag.addEventListener("click", function(){
+        window.open(dslink, "wikipedia", features);
+        
+    })
+
+    //A-tag Dragon Ball================================
+
+    let dbtag = document.getElementById("atag-goku");
+    let dbslink = "https://en.wikipedia.org/wiki/Dragon_Ball_Z";
+    let dbfeatures = "width=500, height=500";
+    
+
+    dbtag.addEventListener("click", function(){
+        window.open(dblink, "wikipedia", dbfeatures);
+        
+    })
+
+    //A-tag One Pice================================
+
+    let optag = document.getElementById("atag-onepice");
+    let opslink = "https://onepiece.fandom.com/wiki/One_Piece_Wiki";
+    let opfeatures = "width=500, height=500";
+    
+
+    optag.addEventListener("click", function(){
+        window.open(oplink, "wikipedia", opfeatures);
+        
+    })
+
+
+    // Background Swither===========================
+
+    function changebg(color){
+        document.body.style.background = color;   
+        if(document.body.style.background === "black"){
+            demonimgdiv.style.border = "2px solid white"
+            gokuimgdiv.style.border = "2px solid white"
+            luffyimgdiv.style.border = "2px solid white"
+        }else{
+            demonimgdiv.style.border = "none"
+            gokuimgdiv.style.border = "none"
+            luffyimgdiv.style.border = "none"
+        }   
+    }
+
+
+
+    
+
+</script>
+</body>
+</html>
